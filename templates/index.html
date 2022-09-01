@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+
+<form action="/index" method="POST">
+        <p><label class="btn btn-primary">Height: </label><input type="text" name="height"/>
+        <p><label class="btn btn-primary">Weight: </label><input type="text" name="weight">
+        <p align="center"><input class="btn btn-primary" type="submit" value="Создать жизнь"/>
+    </p>
+</form>
+
+<!--    <a class="btn btn-primary" href="{{ url_for('live') }}">Создать жизнь</a>-->
+{% endblock %}
+
